@@ -3,58 +3,57 @@ public class Institute{
 	 // Calling the largestNumber method with different parameter types
         int largest1 = largestNumber(10, 20);
         System.out.println("Largest number: " + largest1);
-		
+	//changing no. of parameters to 4	
         int largest2 = largestNumber(10, 20,30,40);
         System.out.println("Largest number: " + largest2);
-		
+	// changing datatype of parameters to float	
         float largest3 = largestNumber(15.7f, 12.5f);
         System.out.println("Largest number: " + largest3);
-		
+	//changing no. of parameters to 3
         int largest4 = largestNumber(5, 10, 8);
         System.out.println("Largest number: " + largest4);
-		
+	// changing datatype of parameters to byte
         int largest5 = largestNumber(2,4);
         System.out.println("Largest number: " + largest5);
-		
+	// changing datatype of parameters to double	
         double largest6 = largestNumber(12.5, 8.7);
         System.out.println("Largest number: " + largest6);
 
         // Calling the average method with different parameter types
         double avg1 = average(5, 8, 3);
         System.out.println("Average: " + avg1);
-		
+		// changing datatype of parameters to double
         double avg2 = average(2.5, 3.5, 4.5);
         System.out.println("Average: " + avg2);
-		
+		//changing no. of parameters to 2
         double avg3 = average(10, 20);
         System.out.println("Average: " + avg3);
-		
+		//having 2 int and 1 double parameter
         double avg4 = average(5, 10, 4.5);
         System.out.println("Average: " + avg4);
-		
+		//having 2 double parameters
         double avg5 = average(2, 4, 6.5);
         System.out.println("Average: " + avg5);
-		
-        short shortNum = 5;
-        double avg6 = average(shortNum, 10);
+		//having 1 short parameter and 1 int parameter
+        double avg6 = average((short)5, 10);
         System.out.println("Average: " + avg6);
 		
         // Calling the add method with different parameter types
         double sum1 = add(5, 7);
         System.out.println("Sum: " + sum1);
-		
+		//changing datatype of parameters to double
         double sum2 = add(2.5, 3.8);
         System.out.println("Sum: " + sum2);
-		
+		//changing  no. of parameters to 3
         double sum3 = add(5, 7, 9);
         System.out.println("Sum: " + sum3);
-		
+		//having 3 flloat parameters
         double sum4 = add(2.5f, 3.8f, 4.2f);
         System.out.println("Sum: " + sum4);
-		
+		//having 2 int parameters and 1 float parameter
         double sum5 = add(5, 7, 4.5);
         System.out.println("Sum: " + sum5);
-		
+		//having 2 float parameters
         double sum6 = add(2.5f, 3.8f);
         System.out.println("Sum: " + sum6);
 	}
