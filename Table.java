@@ -6,6 +6,11 @@ public class Table{
 	static char grade;
 	public Table(){
 		System.out.println("This is a default contructor");
+		System.out.println("salary:"+salary);
+		System.out.println("phone no.:"+phno);
+		System.out.println("cgpa:"+cgpa);
+		System.out.println("pi:"+pi);
+		System.out.println("grade:"+grade);
 	}
 	public Table(int salary1, long phno1, float cgpa1, double pi1, char grade1){
 		System.out.println("This is a parameterized contructor");
