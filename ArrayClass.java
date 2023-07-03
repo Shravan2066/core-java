@@ -10,7 +10,7 @@ public class ArrayExample {
         boolean[] options = {false, true, true, false};
         double[] measures = {0.5, 1.0, 1.5, 2.0};
         char[] grades = {'A', 'B', 'C'};
-
+        
         int[] data = new int[5];
         String[] names = new String[3];
         boolean[] truthValues = new boolean[4];
