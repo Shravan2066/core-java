@@ -1,25 +1,25 @@
 public class BankAccount {
    //States
-    private String accountNumber;
-    private String accountHolderName;
-    private double balance;
-    private boolean isAccountActive;
-    private String accountType;
-    private String branchName;
-    private String branchCode;
-    private String phoneNumber;
-    private String email;
-    private String address;
-    private int transactionCount;
-    private String currency;
-    private boolean hasChequeBook;
-    private String accountOpenDate;
-    private String lastTransactionDate;
-    private String statementAddress;
-	private int pinCode;
-    private double availableCredit;
-    private double totalCreditLimit;
-    private boolean isSavingsAccount;
+    public String accountNumber;
+    public String accountHolderName;
+    public double balance;
+    public boolean isAccountActive;
+    public String accountType;
+    public String branchName;
+    public String branchCode;
+    public String phoneNumber;
+    public String email;
+    public String address;
+    public int transactionCount;
+    public String currency;
+    public boolean hasChequeBook;
+    public String accountOpenDate;
+    public String lastTransactionDate;
+    public String statementAddress;
+	public int pinCode;
+    public double availableCredit;
+    public double totalCreditLimit;
+    public boolean isSavingsAccount;
 
     // Constructor
     public BankAccount(String accountNumber, String accountHolderName, double balance,boolean isAccountActive, String accountType, String branchName) {
