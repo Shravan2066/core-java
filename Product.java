@@ -13,6 +13,14 @@ public class Product {
     String shippingMethod;
     boolean isFeatured;
 
+    static{
+        name="Playstation 5";
+        category="Electronics";
+        price="50000";
+        quantity=6;
+        description="console";
+        manufacturer="sony";
+    }
     public static void main(String[] args) {
         Product phone = new Product("iPhone 12", "Electronics", 999.99, 10, "Smartphone", "Apple");
         System.out.println(phone.name);
