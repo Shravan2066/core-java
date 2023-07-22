@@ -1,0 +1,184 @@
+Java Test June Batch
+
+1. 11 34
+
+2.Syntax error - static should not be mentioned in the main method
+
+3.Syntax error;
+
+4.
+
+6. method parameters : Parameters are the variables passed inside a method. They are specified after the method name, inside a paranthesis. When a parameter is passed to a method while it is being called, its called an argument.
+eg.: add(int a, int b)
+
+7. compile-time polymorphism is achieved through method overloading. Method overloading allows you to define multiple methods with the same name in the same class, but with different number of parameters or datatypes of parameters or order of parameters. The Java compiler determines which method to call at compile time based on the number and types of arguments passed to the method.
+eg.:public class MathOperations {
+    public int add(int a, int b) {
+        return a + b;
+    }
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+    public double add(double a, double b) {
+        return a + b;
+    }
+    public static void main(String[] args) {
+        MathOperations math = new MathOperations();
+
+        int sum1 = math.add(5, 10);
+        int sum2 = math.add(5, 10, 15);
+        double sum3 = math.add(2.5, 3.5);
+
+        System.out.println("Sum1: " + sum1); 
+        System.out.println("Sum2: " + sum2); 
+        System.out.println("Sum3: " + sum3); 
+    }
+}
+
+
+8.
+
+
+
+9.A package in Java is a mechanism to organize classes and interfaces into a namespace.A package in Java is a mechanism to organize classes and interfaces into a namespace.
+Syntax: package package_name;
+
+Types of imports:
+1)Single type import: This type of import statement is used to import a single class or interface from a specific package. 
+Syntax: import package_name.ClassName;
+
+2)Multiple Type Import: This type of import statement is used to import multiple classes or interfaces from a specific package. 
+Syntax:import package_name.ClassName1;
+		import package_name.ClassName2;
+		import package_name.ClassName3;
+3)This type of import statement is used to import all the classes and interfaces from a specific package. It is denoted by using an asterisk (*) after the package name. 
+Syntax: import package_name.*;
+
+10. Constructor chaining in Java is a mechanism where one constructor can call another constructor from the same class. It allows you to avoid duplicating code in multiple constructors by reusing the pecious code. This helps to simplify the class design.
+- Constructor chaining is achieved using the this() keyword to call another constructor within the same class or the super() keyword to call a constructor of the superclass.
+- The call to another constructor must be the first statement in the constructor body.
+eg:public class Square {
+    int width;
+	int height;
+
+    // Constructor with two parameters
+    public Square(int width, int height) 
+        this.width = width;
+        this.height = height;
+    }
+
+    // Constructor calling the two-parameter constructor
+    public Square(int size) {
+        this(size, size); 
+    }
+
+
+    public static void main(String[] args) {
+        Square square_area=new Square(2);
+    }
+}
+
+11. public class Fibonacci {
+
+    public static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+
+    public static void main(String[] args) {
+        int count = 10;
+
+        System.out.println("Fibonacci Sequence:");
+        for (int i = 0; i < count; i++) {
+            System.out.print(fibonacci(i) + " ");
+        }
+    }
+}
+
+12. public class CheckOddNumbers {
+
+    public static boolean onlyOddNumbers(int[] numbers) {
+        for (int num : numbers) {
+            if (num % 2 == 0) {
+                return false; 
+            }
+        }
+        return true; // All numbers are odd
+    }
+
+    public static void main(String[] args) {
+        // Sample array of integers
+        int[] numbers = {1, 3, 5, 7, 9};
+
+        // Check if the array contains only odd numbers
+        boolean result = onlyOddNumbers(numbers);
+
+        System.out.println("Does the list contains only odd numbers? " + result); // Output: Array contains only odd numbers? true
+    }
+}
+
+13.
+public class CheckSameElementsInArrays {
+
+    public static boolean haveSameElements(int[] arr1, int[] arr2) {
+
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i] != arr2[i]) {
+                return false;
+            }
+        }
+        return true; // All elements are the same
+    }
+
+    public static void main(String[] args) {
+        int[] array1 = {1, 2, 3, 4, 5};
+        int[] array2 = {5, 3, 2, 4, 1};
+        int[] array3 = {1, 2, 3, 4, 6};
+
+        boolean result1 = haveSameElements(array1, array2);
+        boolean result2 = haveSameElements(array1, array3);
+
+        System.out.println("Array1 and Array2 have the same elements? " + result1); 
+        System.out.println("Array1 and Array3 have the same elements? " + result2); 
+    }
+}
+
+14.Enumeration in Java is a data type used to define a collection of constant values. Each value in the enumeration is known as an "enum constant".
+In Java, enumerations are declared using the enum keyword.
+syntax:enum EnumName {
+    VALUE1,
+    VALUE2,
+}
+eg: enum Color{
+	RED,
+	BLACK,
+	WHITE
+}
+
+15. these are the steps that take place in JVM when an object is created:
+
+1)Loading Class: The JVM first loads the class containing the object's blueprint (class definition) into memory. 
+
+2)Memory Allocation: Once the class is successfully loaded and verified, the JVM allocates memory for the object from the heap. 
+
+3) Object Initialization: After memory allocation, the JVM initializes the object. This includes initializing all instance variables.
+
+4) Superclass Initialization: If the object being created is a subclass, the JVM ensures that the superclass is initialized first.
+
+5) Constructor Execution: Finally, the constructor of the class is executed. 
+
+6) Reference Assignment: After the object is fully initialized, the JVM returns a reference (memory address) to the newly created object. 
+
+16. Members of the class are :
+
+	1)Variables
+	2)Methods
+	3)Constructors
+	4)Inner classes/Non public classes
+	5)static blocks
+	6)static methods
+	7)Inner interfaces
+	8)enum constants
